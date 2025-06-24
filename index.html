@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYMDOKU</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1 class="game-title">SYMDOKU</h1>    
+			<button id="clearCell"class="control-btn primary-btn clearCell-panel hidden" onclick="clearSelectedCell()">Clear the Cell</button>  
+            <button id="settingsBtn" class="control-btn secondary-btn settings-btn" title="Settings">⚙️</button>    
+            <div class="game-controls">
+                <button class="control-btn primary-btn" onclick="generateNewPuzzle('easy')">Easy</button>
+                <button class="control-btn primary-btn" onclick="generateNewPuzzle('medium')">Medium</button> 
+                <button class="control-btn primary-btn" onclick="generateNewPuzzle('hard')">Hard</button>  
+          
+                 
+          <!--       <button class="control-btn secondary-btn" onclick="resetPuzzle()">Reset</button>  -->
+            </div>
+            <button id="quitToMenuBtn" class="hidden">Quit to Main Menu</button>
+        </div>
+
+        <div class="game-area">
+            <div class="sudoku-grid" id="sudokuGrid">
+                <div class="loading">Select one the option  above to start!!</div>
+            </div>
+
+            <div class="symbols-panel hidden">
+                <h3 class="symbols-title">Select An Emoji</h3>
+                <div class="symbols-grid" id="symbolsGrid">
+                    <!-- Symbols will be generated here -->
+                </div>
+            </div>
+             <div>
+                
+             </div>
+        </div>
+
+        <div class="status-panel hidden">
+          <!--  <div class="timer">⏱️ Time: <span id="timer">00:00</span></div>  -->           	 
+            <div class="difficulty">📊 Level: <span id="difficulty">-</span></div>
+            <div class="status-mistakes"><b>❤️‍🩹️ Mistakes: </b><span id="mistakes">0</span>/5</div>
+          
+        </div>
+    </div>
+	<script src="main.js"></script>
+</body>
+</html>
