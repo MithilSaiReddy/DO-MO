@@ -1,11 +1,11 @@
 // Load Assets
 
 //SFX
-const click = new Audio('assets/sfx/click3.ogg');
-const bgm = new Audio('assets/bgm/Final_Encore.ogg');
-const hurt = new Audio('assets/sfx/hurt.ogg');
-const game_over = new Audio('assets/sfx/game_over.ogg');
-const game_won = new Audio('assets/sfx/game_won.ogg');
+const click = new Audio('sfx/click3.ogg');
+const bgm = new Audio('Final_Encore.ogg');
+const hurt = new Audio('sfx/hurt.ogg');
+const game_over = new Audio('sfx/game_over.ogg');
+const game_won = new Audio('sfx/game_won.ogg');
 
 // Game state variables
 let currentPuzzle = null;
